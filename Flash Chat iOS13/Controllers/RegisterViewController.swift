@@ -16,4 +16,10 @@ class RegisterViewController: UIViewController {
     @IBAction func registerPressed(_ sender: UIButton) {
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "registerToChat"{
+            let destinationVCThree = segue.destination as! ChatViewController
+        }
+    }
+    
 }
