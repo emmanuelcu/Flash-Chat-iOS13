@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = K.appName
         
         
         //        titleLabel.text = ""
@@ -30,14 +30,7 @@ class WelcomeViewController: UIViewController {
         //        charIndex += 1
         //    }
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToLoginVC"{
-            let destinationVC = segue.destination as! LoginViewController
-        } else if segue.identifier == "goToRegisterVC"{
-            let destinationVCTwo = segue.destination as! RegisterViewController
-        }
-    }
+
     
     
 }
